@@ -1,0 +1,26 @@
+<!-- Mostro este bloco somente quando recebo a mensagem success.
+     Uso o alerta verde para comunicar o resultado bem-sucedido de uma operação. -->
+<div th:if="${success} != null">
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle-fill me-2"></i>
+        <span>
+            <!-- Preencho o aviso com a mensagem recebida. Com th:text, exibo texto com escape de HTML. -->
+            <strong th:text="${success}"></strong>
+        </span>
+        <!-- Permito fechar apenas este alerta com o JavaScript do Bootstrap, sem recarregar a página. -->
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+</div>
+<!-- Reservo este bloco para a mensagem fail, quando ela existir.
+     Não crio a mensagem aqui: preciso recebê-la do controller para exibir o alerta vermelho. -->
+<div th:if="${fail} != null">
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+        <span>
+            <!-- Preencho o aviso com a mensagem recebida. Com th:text, exibo texto com escape de HTML. -->
+            <strong th:text="${fail}"></strong>
+        </span>
+        <!-- Permito fechar apenas este alerta com o JavaScript do Bootstrap, sem recarregar a página. -->
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+</div>

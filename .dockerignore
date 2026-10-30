@@ -1,0 +1,23 @@
+# Não envio histórico, saídas de compilação ou configurações pessoais ao Docker.
+.git
+.github
+target
+build
+.idea
+.vscode
+
+# Não envio credenciais locais, logs, backups ou chaves à imagem.
+**/.env
+**/.env.*
+**/*.log
+logs
+backups
+**/*.dump
+**/*.sql.gz
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.jks
+**/application-local.properties
+**/application-local.yml
+**/application-local.yaml

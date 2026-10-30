@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- Defino o fragmento reutilizável validacao e só o mostro quando encontro erros no formulário.
+         Com #fields, consulto os erros associados ao objeto selecionado por th:object na página que me inclui. -->
+    <div th:if="${#fields.hasAnyErrors()}" th:fragment="validacao">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <!-- Percorro os erros detalhados e repito este bloco para mostrar cada problema encontrado. -->
+            <div th:each="error : ${#fields.detailedErrors()}">
+                <i class="bi bi-exclamation-octagon-fill me-1"></i>
+                <!-- Exibo a mensagem deste erro, como a mensagem declarada em @NotBlank no DTO. -->
+                <span th:text="${error.message}"></span>
+            </div>
+            <!-- Permito fechar apenas este alerta com o JavaScript do Bootstrap, sem recarregar a página. -->
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+</body>
+
+</html>
