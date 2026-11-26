@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 460" width="1600" height="460" role="img" aria-label="Spring Boot List - Sistema de Gestão de Produtos em Java, Spring Boot e Thymeleaf">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#030914"/><stop offset=".6" stop-color="#071c21"/><stop offset="1" stop-color="#03080d"/></linearGradient>
+<linearGradient id="line"><stop stop-color="#3efecb" stop-opacity=".1"/><stop offset=".5" stop-color="#72ff85"/><stop offset="1" stop-color="#28eafc" stop-opacity=".1"/></linearGradient>
+<pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse"><path d="M45 0H0V45" stroke="#3efecb" stroke-opacity=".10" fill="none"/></pattern>
+<filter id="glow"><feGaussianBlur stdDeviation="3" result="a"/><feMerge><feMergeNode in="a"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="460" fill="url(#bg)"/><rect width="1600" height="460" fill="url(#grid)"/>
+<g fill="none" stroke="#4affa5" stroke-opacity=".7" stroke-width="2"><path d="M0 55h180l32 25h310M1600 55h-190l-30 25h-160M0 411h210l28-30h290M1600 411h-180l-28-30h-170"/><path d="M45 120H1240l35 35v155l-35 35H45l-20-30V145Z"/></g>
+<text x="93" y="105" fill="#71ffe5" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" letter-spacing="4">SYSTEM // JAVA WEB APPLICATION</text>
+<text x="88" y="229" fill="#f5faff" font-family="DejaVu Sans,Arial,sans-serif" font-size="79" font-weight="800">SPRING BOOT <tspan fill="#81ff6c">LIST</tspan></text>
+<path d="M90 255h1085" stroke="url(#line)" stroke-width="5" filter="url(#glow)"/>
+<text x="93" y="306" fill="#a4ffe6" font-family="DejaVu Sans,Arial,sans-serif" font-size="26">JAVA 17  •  SPRING MVC  •  THYMELEAF  •  JPA</text>
+<g font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="middle"><rect x="91" y="365" width="245" height="38" rx="19" fill="#061e23" stroke="#81ff6c"/><text x="213" y="390" fill="#f5faff">PRODUCT CRUD</text><rect x="351" y="365" width="180" height="38" rx="19" fill="#061e23" stroke="#38dbff"/><text x="441" y="390" fill="#f5faff">DOCKER</text><rect x="546" y="365" width="180" height="38" rx="19" fill="#061e23" stroke="#81ff6c"/><text x="636" y="390" fill="#f5faff">RENDER</text></g>
+<g fill="none" stroke="#27daff" stroke-width="3"><circle cx="1391" cy="230" r="132" opacity=".6"/><circle cx="1391" cy="230" r="99" opacity=".8"/><rect x="1333" y="173" width="116" height="115" rx="18"/></g>
+<g stroke="#8aff74" fill="none" stroke-width="4"><path d="M1364 211l-13 17 13 16m54-33 13 17-13 16m-30 13 11-56"/></g>
+<g fill="#70ffe0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15"><text x="1294" y="386">CONTROLLER → SERVICE → JPA</text><text x="1510" y="444" text-anchor="end">GILBERTO CORRÊA // FATEC</text></g></svg>
